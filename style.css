@@ -1,0 +1,206 @@
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+
+#home, #about, #question {
+    background-color: #fff;
+    padding: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 20px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: auto;
+    height: 60vh; 
+    background-color: #615f5f;
+}
+
+.box {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: auto;
+    height: 60vh; 
+    background-color: #615f5f;
+}
+
+.boxz {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container2 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: auto;
+    height: 60vh; 
+    background-color: #615f5f;
+}
+
+.boxy {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #333;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 20%;
+    text-align: center;
+  }
+  
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+}
+  
+.slide {
+    flex: 0 0 100%;
+}
+  
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+input[type="radio"] {
+    display: none;
+}
+  
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+label {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #888;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+  
+input[type="radio"]:checked + label {
+    background: #007BFF;
+}
+  
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+  
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+  
+#slide5:checked ~ .slides {
+    transform: translateX(-400%);
+}
+  
+#slide6:checked ~ .slides {
+    transform: translateX(-500%);
+}
+
+#slide7:checked ~ .slides {
+    transform: translateX(-600%);
+}
+  
+#slide8:checked ~ .slides {
+    transform: translateX(-700%);
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    width: 30%;
+    border: 2px solid #333;
+}
+
+.styled-table th, .styled-table td {
+    border: 2px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #333;
+    color: white;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 1s;
+}
+
+nav a:hover,
+nav a.active {
+    color: rgb(255, 230, 0);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
